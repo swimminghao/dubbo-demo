@@ -8,22 +8,22 @@
          http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="dubbo-demo"  />
+    <dubbo:application name="dubbo-demo"/>
 
     <!-- 注册的地址 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
 
     <!-- 使用dubbo协议在20880端口暴露服务 -->
-<!--
-    <dubbo:protocol name="dubbo" port="20880" />
--->
-<!--
-<dubbo:protocol name="dubbo" port="20881" />
--->
+    <!--
+        <dubbo:protocol name="dubbo" port="20880" />
+    -->
+    <!--
+    <dubbo:protocol name="dubbo" port="20881" />
+    -->
 
 
     <!-- dubbo暴露的接口 会覆盖dubbo.properties文件中的配置 -->
-<dubbo:protocol name="dubbo" port="20882" />
+    <dubbo:protocol name="dubbo" port="20882"/>
 
     <!-- 申明要暴露的服务接口 -->
     <!-- timeout属性 dubbo service标签是默认1000ms  引用方reference标签是继承consumer的默认值也是1000ms
@@ -37,7 +37,7 @@
     </dubbo:service>
 
     <!-- 实现服务 (旧) -->
-    <bean id="userService" class="com.zhanglijun.demo.bootuserserviceprovider.UserServiceImpl" />
+    <bean id="userService" class="com.zhanglijun.demo.bootuserserviceprovider.UserServiceImpl"/>
 
 
 </beans>

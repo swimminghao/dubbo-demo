@@ -17,7 +17,7 @@ import java.util.List;
 
 //@Component
 //@Service// 这个是为了 配合第三种spring boot dubbo整合方式  利于dubboComponentScan扫描到这个dubbo服务
-    @Slf4j
+@Slf4j
 public class UserServiceImpl implements UserService {
 
     @Override
@@ -32,14 +32,14 @@ public class UserServiceImpl implements UserService {
                 .setAddressStr("庆丰大街")
                 .setUserName("小张");
 
-        final UserAddress userAddress2  = new UserAddress()
+        final UserAddress userAddress2 = new UserAddress()
                 .setUserId(1L)
                 .setAddressId(2L)
                 .setAddressNo("456")
                 .setAddressStr("西湖")
                 .setUserName("小王");
 
-        return new ArrayList<UserAddress>(){{
+        return new ArrayList<UserAddress>() {{
             add(userAddress1);
             add(userAddress2);
         }};
