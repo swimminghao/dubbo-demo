@@ -18,4 +18,8 @@ public class UserAddress implements Serializable {
     private String addressStr;
     private String userName;
     private Long userId;
+
+    public static void main(String[] args) {
+        System.out.println("asdf");
+    }
 }
