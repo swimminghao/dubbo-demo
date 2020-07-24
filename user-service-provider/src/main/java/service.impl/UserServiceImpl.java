@@ -17,24 +17,24 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserAddress> getUserAddressList(String userId) {
 
-        System.out.println("调用到了服务。。。。。1");
+        System.out.println("调用到了服务。。。。。");
 
 
         final UserAddress userAddress1 = new UserAddress()
                 .setUserId(1L)
                 .setAddressId(1L)
                 .setAddressNo("123")
-                .setAddressStr("庆丰大街")
-                .setUserName("小张");
+                .setAddressStr("苏州")
+                .setUserName("奇衡三");
 
-        final UserAddress userAddress2  = new UserAddress()
-                .setUserId(1L)
+        final UserAddress userAddress2 = new UserAddress()
+                .setUserId(2L)
                 .setAddressId(2L)
                 .setAddressNo("456")
                 .setAddressStr("西湖")
-                .setUserName("小王");
+                .setUserName("海问香");
 
-        return new ArrayList<UserAddress>(){{
+        return new ArrayList<UserAddress>() {{
             add(userAddress1);
             add(userAddress2);
         }};
